@@ -1,0 +1,20 @@
+{
+  "name": "plumbing-agency-landing-page",
+  "version": "1.0.0",
+  "description": "A landing page for a plumbing agency showcasing services, about information, and contact details.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "plumbing",
+    "agency",
+    "landing page"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
