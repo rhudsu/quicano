@@ -24,21 +24,22 @@
                 <div class="form-group">
                     <h3>Dados Pessoais</h3>
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required placeholder="Nome Completo" maxlength="32" minlength="5">
+                    <div class="msgErroWhite" id="msgErroNome"></div>
                 </div>
                 <div class="form-group">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" required>
-                </div>
-                
+                    <input type="tel" id="telefone" name="telefone" required  placeholder="telefone com DDD" minlength="10" maxlength="15">
+                    <div class="msgErroWhite" id="msgErroTelefone"></div>
+                </div> 
+
                 <div class="form-group" id="form-group-borda">
                     <h3>Endereço</h3>
 
                     <div style="display: flex; gap: 8px;">
                         <div>
                             <label for="cep">CEP</label>
-                            <input type="number" id="cep" name="cep" required maxlength="8" minlength="8">
-
+                            <input type="number" id="cep" name="cep" maxlength="8" minlength="8">
                         </div>
                         <div style="width: 150px;">
                             <label for="numeroCasa">Número</label>
@@ -46,7 +47,7 @@
                         </div>                
                     </div>
                 </div>                
-                <div class="msgErro" id="msgErroCep"></div>
+                <div class="msgErroRed" id="msgErroCep"></div>
                 <div id="msgCep"></div>
                 <button type="button" class="btn" id="orcamentoBtn">Enviar</button>
             </div>

@@ -1,9 +1,17 @@
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-    }
-
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+:root {
+    --nav-color: #1e40af;
+    --secondary-color: #58c5d4;
+    --text-color: #333;
+    --bg-light: #f3f4f6;
+    --bg-dark: #111827;
+    --white: #ffffff;
+}
+    
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -13,7 +21,9 @@ body {
 
 
 header {
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+
+    background: linear-gradient(135deg, var(--nav-color) 0%, #1e3a8a 100%);
+
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -69,10 +79,49 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
+.container-sucesso{
+    background: rgb(73, 86, 161);
+    color: rgb(255, 255, 255);
+    padding: 90px 30px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-mensagem{
+    margin-top: 50px;
+    font-size: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #1e40af;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+#dadosCliente{
+    width: 60%;
+    text-align: left;
+    border-left: solid 2px white;
+    padding-left: 10px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.container-mensagem h3{
+    margin-bottom: 20px;
+    text-align: left;
+}
+ 
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background: #f59e0b;
+    background: var(--secondary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -95,6 +144,7 @@ nav a:hover {
 .services {
     padding: 4rem 2rem;
     background: #f3f4f6;
+    scroll-margin-top: 100px; 
 }
 
 .section-title {
@@ -110,7 +160,7 @@ nav a:hover {
     gap: 2rem;
 }
 
-.service-card {
+.servicos-card {
     background: white;
     padding: 2rem;
     border-radius: 8px;
@@ -119,11 +169,16 @@ nav a:hover {
     transition: transform 0.3s;
 }
 
-.service-card:hover {
+.vantagens-card {
+    padding: 5px;
+    margin: 30px;
+}
+
+.servicos-card:hover {
     transform: translateY(-5px);
 }
 
-.service-card h3 {
+.servicos-card h3 {
     color: #1e40af;
     margin: 1rem 0;
 }
@@ -135,6 +190,7 @@ nav a:hover {
 
 .about {
     padding: 4rem 2rem;
+    scroll-margin-top: 100px; 
 }
 
 .about-content {
@@ -155,6 +211,7 @@ nav a:hover {
     color: white;
     padding: 3rem 2rem;
     text-align: center;
+    scroll-margin-top: 100px; 
 }
 
 .contact h2 {
@@ -256,13 +313,36 @@ input, textarea {
     border-radius: 5px;
 }
 
-.msgErro{
+.msgErroRed{
     color: red;
     font-size: 0.9rem;
     margin-top: -25px;
 }
 
-h3{
+.msgErroWhite{
+    color: white;
+    font-size: 0.7rem;
+}
+
+.contact-form h3 {
     text-align: left;
     margin-top: 5px;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+
+.container-carrosel {
+  width: 400%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+ 
+
+/* Pausa ao passar o mouse (opcional) */
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
 }
