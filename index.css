@@ -3,6 +3,11 @@
         padding: 0;
         box-sizing: border-box;
 }
+
+body {
+    background-color: #f3f4f6; 
+}
+
 :root {
     --nav-color: #1e40af;
     --secondary-color: #58c5d4;
@@ -135,14 +140,17 @@ nav a:hover {
     background: #d97706;
 }
 
+
 .container {
+    background-color: #ffffff;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    padding: 20px 10px 20px 10px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
 .services {
-    padding: 4rem 2rem;
+    padding: 0 0;
     background: #f3f4f6;
     scroll-margin-top: 100px; 
 }
@@ -150,7 +158,6 @@ nav a:hover {
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
     color: #1e40af;
 }
 
@@ -188,22 +195,27 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.about {
-    padding: 4rem 2rem;
+.secoes {
     scroll-margin-top: 100px; 
-}
+    background-color: #f3f4f6;
+    margin-top: 20px;
+ }
 
-.about-content {
+.secoes-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 14px;
     align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f3f4f6;
 }
 
-.about h2 {
+.secoes h2 {
     color: #1e40af;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .contact {
@@ -221,7 +233,8 @@ nav a:hover {
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    color: black    ;
     gap: 2rem;
     margin: 2rem 0;
 }
@@ -263,13 +276,12 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.about-img {
+.secoes-img {
     display: flex;
     text-align: center;
     justify-items: center;
     
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-    height: 300px;
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
     border-radius: 8px;
 }
 
@@ -296,7 +308,7 @@ footer {
         font-size: 2rem;
     }
     
-    .about-content {
+    .secoes-content {
         grid-template-columns: 1fr;
     }
 }
@@ -346,3 +358,6 @@ html {
 .carousel-container:hover .carousel-track {
   animation-play-state: paused;
 }
+
+
+ 

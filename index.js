@@ -1,6 +1,5 @@
 
 
-const button = document.getElementById('orcamentoBtn');
 if(document.title == 'Obrigado, por escolher Quicano'){
     const dados = JSON.parse(localStorage.getItem('cliente'));
 
@@ -12,6 +11,7 @@ if(document.title == 'Obrigado, por escolher Quicano'){
 }
 
 
+const button = document.getElementById('orcamentoBtn');
 button.addEventListener('click', async function() {
     const nome = document.getElementById('nome').value;
     const telefone = document.getElementById('telefone').value;
