@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6; 
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    min-width: 340px;
+}
+
+:root {
+    --nav-light-color: #1e40af;
+    --nav-dark-color: #1e3a8a;
+    --color-primary: #1e40af;
+    --secondary-color: #58c5d4;
+    --bg-light: #f3f4f6;
+    --white: #ffffff;
+    --gradient: linear-gradient(135deg, var(--nav-dark-color) 0%, var(--nav-light-color) 100%);
+}
+    
+header {
+    background: var(--gradient);
+    color: var(--white);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 38px;
+    bottom: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;  
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.secao_principal {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    color: var(--white);
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.secao_principal h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.secao_principal p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+ 
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d46557;
+    color: white;
+    border: rgb(253, 50, 50) 1px solid;
+}
+
+
+.container {
+    background-color: var(--white);
+    max-width: 1200px;
+    padding: 0px 10px 20px 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+ 
+.secao {
+    padding: 0 0;
+    background: white;
+    scroll-margin-top: 100px; 
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    color: var(--color-primary);
+    padding-top: 20px;
+}
+ 
+
+.cards {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.vantagens-card { 
+    background-color: var(--bg-light);
+    color: black;
+    color: var(--color-primary);
+
+}
+
+#vantagens {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+ 
+.icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.secoes {
+    scroll-margin-top: 100px; 
+    background-color: var(--bg-light);
+    margin-top: 20px;
+ }
+
+.secoes-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-light);
+
+    p {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+.secoes h2 {
+    color: var(--color-primary);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contato {
+    background: var(--gradient);
+    color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    scroll-margin-top: 50px; 
+}
+
+.contato-info {
+    display: grid;
+    color: black;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.contato-item {
+    margin: 0px 40px 0px 40px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 8px;
+    border: var(--color-primary) 2px solid;
+    background-color: var(--bg-light);    
+}
+
+.secoes-img {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); 
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#img-sobre {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
+
+img {
+    max-width: 15%;
+    height: auto;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    
+}
+ 
+ .carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+
+ @media (max-width: 800px) {
+    .secoes-content {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 10px;
+        text-align: center;
+    }
+    .contato h2 {
+        font-size: 20px;
+    }
+ }
+
+ @media (max-width: 550px) {
+    .logo{
+        font-size: 22px;    
+        bottom: 20px;
+        align-items: center;
+
+        img {
+            min-width: 30%;
+            height: auto;
+        }
+    }
+
+    .secao_principal {
+        padding-top: 40px;
+        h1{
+            font-size: 24px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .secoes h2{
+        font-size: 24px;
+        text-align: center;
+    }
+ 
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .vantagens-card{
+        padding: 10px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .secao_principal h1 {
+        font-size: 30px;
+    }
+    
+    .secoes-content {
+        grid-template-columns: 1fr;
+    }
+
+    .secoes-content {
+        h2 { 
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo {
+        img {
+            display: none;
+        }
+        font-size: 20px;
+    }
+    iframe{
+        display: none;
+    }
+    .contato-item h3{
+        font-size: 18px;
+    }
+
+    .contato-item p{
+        font-size: 12px;
+    }
+}
