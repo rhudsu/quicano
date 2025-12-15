@@ -199,6 +199,7 @@ nav a:hover {
     text-align: center;
     scroll-margin-top: 50px; 
     flex-grow: 1;
+    align-content: center;
 }
 
 .contato-info {
