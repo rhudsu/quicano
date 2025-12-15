@@ -71,8 +71,10 @@ nav a {
     transition: opacity 0.3s;
 }
 
+
 nav a:hover {
     opacity: 0.8;
+    text-decoration: none;
 }
 
 .secao_principal {
@@ -258,7 +260,6 @@ img {
 p {
     font-size: 18px;
     line-height: 1.6;
-    
 }
  
  .carousel-container:hover .carousel-track {
