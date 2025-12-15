@@ -177,7 +177,7 @@ nav a:hover {
     gap: 14px;
     align-items: center;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 10px;
     background-color: var(--bg-light);
 
@@ -190,6 +190,7 @@ nav a:hover {
     color: var(--color-primary);
     font-size: 30px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .contato {
@@ -215,6 +216,11 @@ nav a:hover {
     border-radius: 8px;
     border: var(--color-primary) 2px solid;
     background-color: var(--bg-light);    
+}
+
+.contato-item h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 
 .secoes-img {
@@ -302,6 +308,10 @@ p {
         text-align: center;
     }
  
+    .secoes-content h2 {
+        margin-left: 10px;
+    }
+
     .btn{
         padding: 10px 20px;
         font-size: 14px;
@@ -359,7 +369,7 @@ p {
         display: none;
     }
     .contato-item h3{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contato-item p{
