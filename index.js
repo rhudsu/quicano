@@ -24,16 +24,16 @@ button.addEventListener('click', async function() {
     document.getElementById('msgErroTelefone').innerHTML = "";
 
     if(cep.length != 8  || isNaN(cep)) {
-        document.getElementById('msgErroCep').innerHTML = "Por favor, insira um CEP válido com 8 dígitos numéricos.";
+        document.getElementById('msgErroCep').innerHTML = "Insira um CEP válido com 8 dígitos numéricos.";
         erro = true;
     }
     if(telefone.length != 11 && telefone.length != 10 ||  isNaN(telefone)) {
         console.log(telefone.length);
-        document.getElementById('msgErroTelefone').innerHTML = "Por favor, Insira um telefone valido.";
+        document.getElementById('msgErroTelefone').innerHTML = "Insira um telefone valido.";
         erro = true;
     }
     if(nome.length <= 5 || !isNaN(nome)) {
-        document.getElementById('msgErroNome').innerHTML = "Por favor, Insira seu Nome completo.";
+        document.getElementById('msgErroNome').innerHTML = "Insira seu Nome completo.";
         erro = true;
     }
 
