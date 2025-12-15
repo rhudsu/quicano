@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
+
 body {
     background-color: #f3f4f6; 
     font-family: "DM Sans", sans-serif;
@@ -11,6 +16,9 @@ body {
     font-style: normal;
     color: black;
     min-width: 340px;
+    min-height: 100vh;   
+    display: flex;
+    flex-direction: column;
 }
 
 :root {
@@ -190,6 +198,7 @@ nav a:hover {
     padding: 30px 20px;
     text-align: center;
     scroll-margin-top: 50px; 
+    flex-grow: 1;
 }
 
 .contato-info {
@@ -238,9 +247,6 @@ img {
     height: auto;
 }
 
-html {
-  scroll-behavior: smooth; 
-}
 
 p {
     font-size: 18px;
